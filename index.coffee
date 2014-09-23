@@ -13,13 +13,15 @@ handler = new htmlparser.DefaultHandler((error, dom) ->
 parser = new htmlparser.Parser(handler)
 parser.parseComplete(rawHtml)
 data = []
+id = 0
 select(handler.dom, "div.comment").forEach (element) ->
+  id++
   txt = element.children[0].raw.replace(/\s/g, " ")
   txt = txt.replace "^ *", ''
   row = {
     "created_at": "Wed Oct 31 12:51:53 +0000 2012"
-    "id": 999999999999999999
-    "id_str": "999999999999999999"
+    "id": id
+    "id_str": "#{id}"
     "text": txt
     "source": "Facebook lol"
     "truncated": false
