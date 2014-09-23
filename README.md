@@ -1,7 +1,6 @@
 facebook-corpus
 ==================
 
-`coffee index.coffee ~/facebook-data/html/wall.htm `
+Generate a [twitter_ebooks](https://github.com/mispy/twitter_ebooks) corpus from a Facebook data export.
 
-or 
- `time coffee index.coffee ~/facebook-data/html/wall.htm | grep -v '^$' | sort | uniq | tee ~/Projects/ebooks/wizardis/corpus/facebook.txt`
+`coffee index.coffee ~/facebook-data/html/wall.htm > facebook.json`
