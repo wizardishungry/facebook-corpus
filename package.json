@@ -1,0 +1,23 @@
+{
+  "name": "facebook-corpus",
+  "version": "0.0.0",
+  "description": "parse facebook stuff into a bot corpus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WIZARDISHUNGRY/facebook-corpus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WIZARDISHUNGRY/facebook-corpus/issues"
+  },
+  "homepage": "https://github.com/WIZARDISHUNGRY/facebook-corpus",
+  "dependencies": {
+    "htmlparser": "^1.7.7",
+    "soupselect": "^0.2.0"
+  }
+}
